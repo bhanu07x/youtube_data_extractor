@@ -374,7 +374,7 @@ def get_video_id_from_url(video_url):
 def index():
     """Serve the main HTML page"""
     try:
-        with open('index.html', 'r', encoding='utf-8') as file:
+        with open('templates/index.html', 'r', encoding='utf-8') as file:
             return file.read()
     except FileNotFoundError:
         return """
